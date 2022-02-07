@@ -12,7 +12,7 @@
 
 <body>
     <div class="timerApp">
-        <div class="settings active">
+        <div class="settings">
             <h1>Ustawienia</h1>
             <label for="eventName">Nazwa zdarzenia:</label>
             <input type="text" id="eventName" value="">
@@ -28,9 +28,8 @@
                     <td><input type='number' id="eventYear" maxlength="4" value=""></td>
                 </tr>
             </table>
-            <label for="eventImage">link do obrazka:</label>
-            <input type="text" id="eventImage" value="Thunderstorm.jpg">
-            <button class="settinConfirm">Zapisz ustawienia</button>
+           
+            <button class="setBtn">Zapisz ustawienia</button>
         </div>
         <div class="appBody">
             <div class="image">
@@ -38,7 +37,7 @@
             </div>
 
             <div class="timeSection">
-                <h3><span class="event">Pozostało czasu:</span></h3>
+                <h3>Do <span class="event"></span> pozostało czasu:</h3>
                 <div class="timeCards">
                     <div class="card">
                         <p class="cardTitle">Dni:</p>

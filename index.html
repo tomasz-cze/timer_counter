@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer-counter</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="timer_app">
+        <div class="settings active">
+            <h1>ustawienia</h1>
+            <label for="eventName">Nazwa zdarzenia</label>
+            <input type="text" id="eventName" value="">
+            <table class="date">
+                <tr>
+                    <td><label for="eventDay">Dzień:</label></td>
+                    <td><label for="eventMonth">Miesiąc:</label></td>
+                    <td><label for="eventYear">Rok:</label></td>
+                </tr>
+                <tr>
+                    <td><input type='number' id="eventDay" maxlength="2" value=""></td>
+                    <td><input type='number' id="eventMonth" maxlength="2" value=""></td>
+                    <td><input type='number' id="eventYear" maxlength="4" value=""></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

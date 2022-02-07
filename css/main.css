@@ -17,4 +17,163 @@ body {
           align-items: center;
   min-height: 100vh;
 }
+
+.timerApp {
+  position: relative;
+}
+
+.settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 600px;
+  height: 180px;
+  padding: 30px 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: lightgray;
+  -webkit-transition: opacity 0.6s, -webkit-transform 0.8s;
+  transition: opacity 0.6s, -webkit-transform 0.8s;
+  transition: transform 0.8s, opacity 0.6s;
+  transition: transform 0.8s, opacity 0.6s, -webkit-transform 0.8s;
+  opacity: 0;
+}
+
+.settings h1 {
+  text-align: center;
+}
+
+.settings .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.settings .date input {
+  font-size: 16px;
+  width: 100px;
+}
+
+.active {
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  opacity: 1;
+}
+
+.appBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 800px;
+  height: 500px;
+  border-radius: 13px;
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+          box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+.appBody .image {
+  position: relative;
+  height: 300px;
+  background-image: url(../img/Thunderstorm.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.appBody .image .bodyBtn {
+  position: absolute;
+  text-align: center;
+  width: 50px;
+  right: 0;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 27px;
+  background-color: white;
+}
+
+.appBody .bodyBtn:hover {
+  background-color: black;
+  color: white;
+}
+
+.appBody .timeSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.appBody .timeSection .timeCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.appBody .timeSection .timeCards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 120px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 15px;
+  font-size: 28px;
+}
+
+.appBody .timeSection .timeCards .card .cardTitle {
+  text-align: center;
+}
+
+.appBody .timeSection .timeCards .card .number {
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer-counter</title>
+    <script src="https://kit.fontawesome.com/5ad2517ddc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-    <div class="timer_app">
+    <div class="timerApp">
         <div class="settings active">
-            <h1>ustawienia</h1>
-            <label for="eventName">Nazwa zdarzenia</label>
-            <input type="text" id="eventName" value="">
+            <h1>Ustawienia</h1>
+            <label for="eventName">Nazwa zdarzenia:</label>
+            <input type="text" id="eventName" value="Urodziny">
             <table class="date">
                 <tr>
                     <td><label for="eventDay">Dzień:</label></td>
@@ -25,6 +28,35 @@
                     <td><input type='number' id="eventYear" maxlength="4" value=""></td>
                 </tr>
             </table>
+            <label for="eventImage">link do obrazka:</label>
+            <input type="text" id="eventImage" value="Thunderstorm.jpg">
+        </div>
+        <div class="appBody">
+            <div class="image">
+                <div class="bodyBtn"><i class="fas fa-cogs"></i></div>
+            </div>
+
+            <div class="timeSection">
+                <h3><span class="event">Pozostało czasu:</span></h3>
+                <div class="timeCards">
+                    <div class="card">
+                        <p class="cardTitle">Dni:</p>
+                        <p class="daysCount number">1</p>
+                    </div>
+                    <div class="card">
+                        <p class="cardTitle">Godzin:</p>
+                        <p class="hoursCount number">1</p>
+                    </div>
+                    <div class="card">
+                        <p class="cardTitle">Minut:</p>
+                        <p class="minutesCount number">1</p>
+                    </div>
+                    <div class="card">
+                        <p class="cardTitle">Sekund:</p>
+                        <p class="secondsCount number">1</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -32,4 +64,5 @@
 
     <script src="./main.js"></script>
 </body>
+
 </html>
